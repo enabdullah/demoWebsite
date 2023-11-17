@@ -5,10 +5,6 @@ if(process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
-// to test that
-console.log(process.env.CLOUDINARY_CLOUD_NAME);
-console.log(process.env.CLOUDINARY_KEY);
-console.log(process.env.CLOUDINARY_SECRET);
 
 const express = require('express');
 const path = require('path');
@@ -61,6 +57,7 @@ app.use(methodOverride('_method'));
 
 // use to reflect the file in the public folder
 app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(__dirname + '/public'));
 
 // To remove data using these defaults:
 app.use(mongoSanitize({}));
@@ -197,6 +194,12 @@ app.get('/makecampground', async (req,res) => {
     await camp.save();
     res.send(camp)
 });
+
+13.228.225.19
+18.142.128.26
+54.254.162.138
+
+newWebServer
 */
 
 
