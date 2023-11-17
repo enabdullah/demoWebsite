@@ -1,5 +1,7 @@
 <!-- this is will add the varabile layout -->
 <% layout('layouts/boilerplate') %>
+<base href="/">
+<link rel="stylesheet" href="stylesheets/app.css">
 
 <div id="clusterMap"></div>
 <h1>All Campgrounds</h1>
@@ -43,4 +45,4 @@
     console.log(campgrounds.features[0]);
   </script>
 
-  <script src="javascripts/clusterMap.js"></script>
+  <script src="/javascripts/clusterMap.js"></script>
