@@ -200,6 +200,9 @@ app.get('/makecampground', async (req,res) => {
 54.254.162.138
 
 newWebServer
+
+    <link rel="stylesheet" href="stylesheets/app.css">
+
 */
 
 
