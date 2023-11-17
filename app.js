@@ -56,7 +56,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(methodOverride('_method'));
 
 // use to reflect the file in the public folder
-app.use(express.static(path.join(__dirname,'public')));
+//app.use(express.static(path.join(__dirname,'public')));
 app.use(express.static(__dirname + '/public'));
 
 // To remove data using these defaults:
